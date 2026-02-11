@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>ecm</Name>
+  <Repository>ecm</Repository>
+  <Registry/>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview>ECM - Configuration managed via web UI on port 6100.</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:6100]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/MotWakorb/enhancedchannelmanager/refs/heads/main/ECMLogo.png</Icon>
+  <ExtraParams>--add-host=host.docker.internal:host-gateway</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled/>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Web UI Port" Target="6100" Default="6100" Mode="tcp" Description="Web interface port" Type="Port" Display="always" Required="true" Mask="false">6100</Config>
+  <Config Name="Config Path" Target="/config" Default="/mnt/user/appdata/ecm" Mode="rw" Description="Application configuration directory" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/ecm</Config>
+
+</Container>
